@@ -1,0 +1,18 @@
+<ul class="list">
+
+    {{#each controller as |node|}}
+        <li class='comp single-col-list'>
+            <aside>
+                <img src="assets/server.png" height="80px">
+            </aside>
+            <div>
+
+            {{#link-to 'nodes.details' node}}
+                <h3>{{ node.hostname }}</h3>
+            {{/link-to}}
+            <p>{{ node.unique_identifier }}</p>
+
+            </div>
+        </li>
+    {{/each}}
+</ul>

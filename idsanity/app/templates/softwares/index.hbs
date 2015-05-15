@@ -1,0 +1,29 @@
+<nav class='current'><h1 style='text-align: center;'>Software</h1></nav>
+
+<article>
+    <section>
+        <div class="horizontal centered">
+            <div class="segmented" id="node-list-menu">
+                <button>{{#link-to 'nodes.index'}}All{{/link-to}}</button>
+                <button id="os-list">{{#link-to 'operating-system.index'}} OS {{/link-to}}</button>
+                <button class='selected' id="software-list">Software</button>
+            </div>
+        </div>
+        <ul class="list">
+            {{#each software in controller.model }}
+                <li class='comp single-col-list'>
+                    <aside>
+                        <img src="assets/server.png" height="80px">
+                    </aside>
+                    <div>
+
+                    {{#link-to 'softwares.nodes' software}}
+                        <h3>{{ software.name }}</h3>
+                    {{/link-to}}
+                    <h4>{{ software.version }}</h4>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </section>
+</article>

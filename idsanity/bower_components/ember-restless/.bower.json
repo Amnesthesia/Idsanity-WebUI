@@ -1,0 +1,33 @@
+{
+  "name": "ember-restless",
+  "version": "0.7.1",
+  "author": "Garth Poitras",
+  "main": "dist/ember-restless.js",
+  "ignore": [
+    "CHANGELOG.md",
+    "README.md",
+    "tests",
+    ".travis.yml",
+    "package.json",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "ember": ">= 1.0.0"
+  },
+  "devDependencies": {
+    "ember": "~1.10.0",
+    "pretender": "~0.6.0",
+    "qunit": "~1.17.1"
+  },
+  "homepage": "https://github.com/endlessinc/ember-restless",
+  "_release": "0.7.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.7.1",
+    "commit": "33a76f810e9854f0907b298f234c877386133294"
+  },
+  "_source": "git://github.com/endlessinc/ember-restless.git",
+  "_target": "~0.7.1",
+  "_originalSource": "ember-restless",
+  "_direct": true
+}

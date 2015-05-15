@@ -1,0 +1,29 @@
+<nav class='current'><h1 style='text-align: center;'>Operating Systems</h1></nav>
+
+<article>
+    <section>
+        <div class="horizontal centered">
+            <div class="segmented" id="node-list-menu">
+                <button>{{#link-to 'nodes.index'}}All{{/link-to}}</button>
+                <button class='selected' id="os-list">{{#link-to 'operating-system.index'}} OS {{/link-to}}</button>
+                <button id="software-list">{{#link-to 'softwares.index'}}Software{{/link-to}}</button>
+            </div>
+        </div>
+        <ul class="list">
+            {{#each os in controller}}
+                <li class='comp single-col-list'>
+                    <aside>
+                        <img src="assets/server.png" height="80px">
+                    </aside>
+                    <div>
+
+                    {{#link-to 'operating-system.nodes' os}}
+                        <h3>{{ os.family }}</h3>
+                    {{/link-to}}
+                    <p>{{ os.info }}</p>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </section>
+</article>

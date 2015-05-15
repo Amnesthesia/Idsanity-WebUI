@@ -1,0 +1,16 @@
+<nav class='current'><h1 style='text-align: center;'>Nodes by ...</h1></nav>
+
+<article>
+    <section>
+        <div class="horizontal centered">
+            <div class="segmented" id="node-list-menu">
+                <button>{{#link-to 'nodes.index'}}All{{/link-to}}</button>
+                <button class='selected' id="os-list">{{#link-to 'operating-system.index'}} OS {{/link-to}}</button>
+                <button id="software-list">{{#link-to 'softwares.index'}}Software{{/link-to}}</button>
+                <button id="key-list">{{#link-to 'keys.index'}}Key{{/link-to}}</button>
+            </div>
+        </div>
+
+        {{ outlet 'node-list' }}
+    </section>
+</article>

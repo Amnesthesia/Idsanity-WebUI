@@ -1,0 +1,14 @@
+<nav class='current'><h1 style='text-align: center;'>Nodes</h1></nav>
+
+<article>
+    <section>
+        <div class="horizontal centered">
+            <div class="segmented" id="node-list-menu">
+                <button class='selected'>All</button>
+                <button id="os-list">{{#link-to 'operating-system.index'}} OS {{/link-to}}</button>
+                <button id="software-list">{{#link-to 'softwares.index'}}Software{{/link-to}}</button>
+            </div>
+        </div>
+        {{ render 'nodes.list' controller.model }}
+    </section>
+</article>

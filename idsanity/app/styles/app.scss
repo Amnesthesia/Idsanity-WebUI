@@ -1,0 +1,39 @@
+
+body
+{
+    background: #000;
+
+    .single-col-list
+    {
+        h3
+        {
+            font-weight: bold;
+        }
+
+        img
+        {
+            height: 75px;
+            margin-top: 10px;
+            margin-right: 25px;
+        }
+        p
+        {
+            text-decoration: none;
+            margin-top: 0px;
+        }
+    }
+
+    img.category-image
+    {
+        width: 100px;
+    }
+
+    #node-list-menu
+    {
+        & > button > a, & > button > a:active, & > button > a:hover
+        {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<nav class='current'><h1 style='text-align: center;'>{{controller.model.hostname}}</h1></nav>
+<article>
+    <section>
+
+        <aside>
+            <img src="assets/images/server.png" height="100px">
+        </aside>
+
+        <h1>
+            {{controller.model.hostname}}
+        </h1>
+        <p>
+            {{controller.model.last_seen}}
+        </p>
+
+        {{ outlet 'rule-list' }}
+
+    </section>
+</article>

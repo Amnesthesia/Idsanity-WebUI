@@ -1,0 +1,24 @@
+<nav class="current">
+    <h1 style="text-align: center;">Rules</h1>
+</nav>
+<article>
+    <section>
+        <ul class="list">
+            {{#each rule in controller.model }}
+                <li class="comp">
+                    <div>
+                        {{#link-to 'rules.details' rule}}
+                            <h3>{{rule.raw}}</h3>
+                        {{/link-to}}
+                        <h4>{{rule.date_added_formatted}}</h4>
+                    </div>
+
+                    <aside>
+                        <span class='nav'></span>
+                    </aside>
+
+                </li>
+            {{/each}}
+        </ul>
+    </section>
+</article>

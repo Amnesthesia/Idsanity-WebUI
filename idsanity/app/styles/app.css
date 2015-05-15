@@ -1,0 +1,18 @@
+body {
+  background: #000; }
+  body .single-col-list h3 {
+    font-weight: bold; }
+  body .single-col-list img {
+    height: 75px;
+    margin-top: 10px;
+    margin-right: 25px; }
+  body .single-col-list p {
+    text-decoration: none;
+    margin-top: 0px; }
+  body img.category-image {
+    width: 100px; }
+  body #node-list-menu > button > a, body #node-list-menu > button > a:active, body #node-list-menu > button > a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+/*# sourceMappingURL=app.css.map */

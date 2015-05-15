@@ -1,0 +1,23 @@
+<h2>Rules</h2>
+<ul class="list single-col-list">
+    {{#each controller as |c|}}
+        <li class="comp">
+            <aside>
+                {{#if c.enabled}}
+                    <img src="assets/images/rule_on.png">
+                {{else}}
+                    <img src="assets/images/rule_off.png">
+                {{/if}}
+            </aside>
+            {{#link-to 'node-rule.details' c}}
+                <div>
+                    <h3>{{ c.rule.raw }}</h3>
+                    <h4>{{ c.rule.date_added_formatted }}</h4>
+                </div>
+            {{/link-to}}
+            <aside>
+                <span class='nav'></span>
+            </aside>
+        </li>
+    {{/each}}
+</ul>
